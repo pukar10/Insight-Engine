@@ -41,6 +41,6 @@ python backend/ingest.py
 # 4. Run app
 streamlit run app.py
 
-# (Optional) Install ollama server with an LLM (phi4 recommended)
+# (Optional) Install ollama server with an phi4 LLM
 
 ```
