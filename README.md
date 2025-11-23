@@ -3,11 +3,11 @@ Turn your messy notes and PDFs into a tiny, local “second brain”.
 
 Ask questions in a simple web UI and get back:
 - Relevant snippets from your files
-- (Optionally) a full AI answer powered by a local LLM
+- (Optionally but **highly** recommended) a full AI answer powered by a local LLM
 
 All local. All free. No API keys. No cloud.
 
----
+
 
 ## ✨ What it does
 
@@ -16,7 +16,7 @@ All local. All free. No API keys. No cloud.
 - Shows you where each answer came from (file + chunk)
 - Optional: uses a local model (via Ollama) to summarize and answer in full sentences
 
----
+
 
 ## 🛠 Tech
 
@@ -26,9 +26,11 @@ All local. All free. No API keys. No cloud.
 - **sentence-transformers** – embeddings (`all-MiniLM-L6-v2`)
 - **Ollama + phi4 (optional)** – local LLM for chatty answers
 
----
+
 
 ### 🚀 local setup
+---
+
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
@@ -41,6 +43,6 @@ python backend/ingest.py
 # 4. Run app
 streamlit run app.py
 
-# (Optional) Install ollama server with an phi4 LLM
+# (Optional) Install ollama server with phi4 LLM
 
 ```
